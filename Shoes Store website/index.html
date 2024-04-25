@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./Styles/style.css">
+       
+    <title>ANUVIK: Shoes Site </title>
+    <script type="text/javascript">
+        var mysrc="1"
+            function rightimg() {
+                mysrc=="2"
+                if (mysrc == "2") {
+                    document. images['Images-1'].src = "./Images/shoes2.jpg";
+                    document. images['Images-1'].alt = "image-2";
+                    mysrc = "1";
+                }else if(mysrc == "1") {
+                    document. images['Images-1'].src = "./Images/shoes1.jpg";
+                    document. images['Images-1'].alt = "image-1";
+                    mysrc = "3";
+                } else if (mysrc=="3") {
+                    document. images['Images-1'].src = "./Images/shoes3.jpg";
+                    document. images['Images-1'].alt = "image-3";
+                    mysrc = "2";
+                }       
+            }
+            function leftimg() {
+                if (mysrc == "2") {
+                    document. images['Images-1'].src = "./Images/shoes2.jpg";
+                    document. images['Images-1'].alt = "image-2";
+                    mysrc = "3";
+                } else if (mysrc == "3") {
+                    document. images['Images-1'].src = "./Images/shoes3.jpg";
+                    document. images['Images-1'].alt = "image-3";
+                    mysrc = "1";
+                } else if (mysrc=="1"){
+                    document. images['Images-1'].src = "./Images/shoes1.jpg";
+                    document. images['Images-1'].alt = "image-1";
+                    mysrc = "2";
+                }        
+            }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar Top -->
+    <section id="section">
+        <nav id="navbar__top">
+            <div class="navbar1__main__div">
+                <div class="navbar1__heading__div">
+                    <h2 class="navbar1__heading">Biggest Sale is on its Way</h2>
+                </div>
+                <div class="navbar1__list__div">
+                    <ul class="navbar1__ul">
+                        <li class="navbar1__li"><a href="./HTML pages/createAccount.html">Create Account</a></li>
+                        <li class="navbar1__li"><a href="./HTML pages/login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Logo and Name section -->
+    <section id="section">
+        <div id="logo__section__main__div">
+            <div class="logo__div__container">
+                <!-- Logo -->
+                <div class="logo__image__div">
+                    <img src="./Images/Logo/icon.png " alt="Logo" class="logo__image">
+                </div>
+                <!-- Name -->
+                <div>
+                    <div class="logo__text__div">
+                        <h1 class="logo__main__heading">ANUVIK-SHOES</h1>
+                        <h3 class="logo__sub__heading">ONLINE SHOES STORE</h3>
+                    </div>
+                </div>
+                <!-- Extra Feature -->
+                <div class="logo__image__div">
+                    <img src="./Images/Logo/logo1 Ature.png" alt="Logo" class="logo__image__duplicate">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Navbar -->
+    <section id="section">
+        <nav id="navbar__main">
+            <div class="navbar2__main__div">
+                <ul>
+                    <li class="list__item list__item1"><a href="./index.html" class="active">Home</a></li>
+                    <li class="list__item list__item2"><a href="./Shoes/Formal-shoes/formal.html">Formal</a></li>
+                    <li class="list__item list__item3"><a href="./Shoes/Casual-shoes/casual.html">Casual</a></li>
+                    <li class="list__item list__item4"><a href="./Shoes/Sports-shoes/sports.html">Sports</a></li>
+                    <li class="list__item list__item5"><a href="./HTML pages/contact.html">Contact Us</a></li>
+                    <li class="list__item list__item6"><a href="./HTML pages/about.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- image-gallery -->
+    <section id="section">
+        <div id="image-gallery-container">
+            <div class="image-gallery">
+                <button onclick="rightimg()" class="right-botton"><img src="./Images/Logo/Left-right.png" ></button>
+                <div class="Images">
+                    <img id="Images-1" src="./Images/shoes1.jpg" alt="Image-1">
+                </div>
+                <button onclick="leftimg()"><img src="./Images/Logo/Left-right.png" style="transform: rotate(180deg);"></button>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section id="section">
+        <div id="product__section__main__div">
+            <div class="products__container">
+                <div class="product product1">
+                    <div class="product__text">
+                        <h3>Formals</h3>
+                        <h3>40-50% Discount</h3>
+                    </div>
+                    <img src="images/prodform1.jpg" alt="">
+                    <p><a href="./Shoes/Formal-shoes/formal.html">Check This</a></p>
+                </div>
+                <div class="product product2">
+                    <div class="product__text">
+                        <h3>Sports</h3>
+                        <h3>New Arrivals</h3>
+                    </div>
+                    <img src="images/prodform2.jpg" alt="">
+                    <p><a href="./Shoes/Sports-shoes/sports.html">Check This</a></p>
+                </div>
+                <div class="product product3">
+                    <div class="product__text">
+                        <h3>Casuals</h3>
+                        <h3>Flat 30% Discount</h3>
+                    </div>
+                    <img src="images/prodform3.jpg" alt="">
+                    <p><a href="./Shoes/Casual-shoes/casual.html">Check This</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section">
+        <footer class="footer__section">
+            <div class="footer__main__container">
+                <div class="footer__content part1">
+                    Copyright &copy; AV shopping<br> All rights reserved!
+                </div>
+                <div class="footer__content part2">
+                    <p class="p1">Developer Details :</p>
+                    <p class="p2">msvarunvikas24122004@gmail.com</p>
+                    <p class="p2">Vikas Yadav</p>
+                </div>
+                <div class="footer__content part3">
+                    <p><a href="#navbar__top">Move to top</a></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    
+</body>
+
+</html>
